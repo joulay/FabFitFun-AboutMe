@@ -37,3 +37,19 @@ body {
     transition: max-height .7s ease-in,
         visibility 0s linear 300ms
 }
+
+.employee-list {
+    list-style: none;
+    flex-wrap: wrap;
+   
+    display: flex;
+    justify-content: space-around;
+}
+
+.emp-img {
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 4rem;
+    border-radius: 50%;
+    opacity: .5;
+}
