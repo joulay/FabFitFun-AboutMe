@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     border: 1px solid pink;
-
+    visibility: hidden;
 }
 
 .row-employee {
@@ -29,4 +29,11 @@ body {
     border: 1px solid yellow;
     width: 30%;
     margin: 24px;
+}
+
+.row--show {
+    max-height: 500px;
+    visibility: visible;
+    transition: max-height .7s ease-in,
+        visibility 0s linear 300ms
 }
