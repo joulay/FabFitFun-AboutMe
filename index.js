@@ -9,7 +9,7 @@ $(document).ready(function() {
         this.generateHtml = function() {
             return `
                 <div class="employee-card">
-                    <img class="profile-image" src="${this.url}" alt="${this.name}"/>
+                    <img class="profile-image" id="thumb ${this.id}" src="${this.url}" alt="${this.name}"/>
                     <div class="name">${this.name}</div>
                     <div class="description">${this.description} </div>
                 </div>
@@ -38,13 +38,13 @@ $(document).ready(function() {
         // renders all items
         this.render = function() {
             // <section class="profile-row"></section>
-            // <section class="row-employee" id="pos1">employee1</section>
-            $('#pos1').html(this.item1.generateHtml());
+            // <section class="row-employee" id="pane1">employee1</section>
+            $('#pane1').html(this.item1.generateHtml());
             if (this.item2) {
-                $('#pos2').html(this.item2.generateHtml());
+                $('#pane2').html(this.item2.generateHtml());
             }
             if (this.item3) {
-                $('#pos3').html(this.item3.generateHtml());
+                $('#pane3').html(this.item3.generateHtml());
             }
         }
     };
