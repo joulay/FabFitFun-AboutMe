@@ -16,7 +16,7 @@ $(document).ready(function() {
             `;
         }
     } 
-    
+
     //define the engine
     function ProfileEngine(employeeJson) {
         this.employeeJson = employeeJson;
@@ -33,7 +33,6 @@ $(document).ready(function() {
             this.item3 = this.item2; 
             this.item2 = this.item1; 
             this.item1 = new ProfileItem(this.employeeJson, id); // { id: 'emp1', name: 'phyllis', description 'salesman' };
-
         }
 
         // renders all items
@@ -41,10 +40,8 @@ $(document).ready(function() {
             // <section class="profile-row"></section>
             // <section class="row-employee" id="pos1">employee1</section>
             $('#pos1').html(this.item1.generateHtml());
-
             if (this.item2) {
                 $('#pos2').html(this.item2.generateHtml());
-        
             }
             if (this.item3) {
                 $('#pos3').html(this.item3.generateHtml());
