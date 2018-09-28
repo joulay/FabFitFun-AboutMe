@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     border: 1px solid pink;
     visibility: hidden;
+    max-height: 0;
 }
 
 .row--show {
