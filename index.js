@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    
     function ProfileItem(employeeJson, id) {
         this.id = id;
         this.name = employeeJson[id].name;
@@ -17,6 +16,7 @@ $(document).ready(function() {
             `;
         }
     } 
+    
     //define the engine
     function ProfileEngine(employeeJson) {
         this.employeeJson = employeeJson;
