@@ -16,7 +16,7 @@ body {
     box-sizing: border-box;
 }
 
-.row {
+.profile-row {
     display: flex;
     justify-content: space-between;
     border: 1px solid pink;
@@ -28,7 +28,7 @@ body {
     max-height: 500px;
     visibility: visible;
     transition: max-height 0.50s ease-out,
-    visibility 0s linear 300ms
+        visibility 0s linear 300ms
 }
 
 .row-employee {
@@ -58,4 +58,9 @@ body {
 
 .emp-img:hover {
     opacity: 1;
+}
+
+.profile-image {
+    height: 18rem;
+    width: 18rem;
 }

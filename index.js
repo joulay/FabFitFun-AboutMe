@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    //object oriented with logical methods instead of step by step instructions
+    
     function ProfileItem(employeeJson, id) {
         this.id = id;
         this.name = employeeJson[id].name;
@@ -9,10 +9,11 @@ $(document).ready(function() {
 
         this.generateHtml = function() {
             return `
-                <div>Name: ${this.name}</div>
-                <div>Id: ${this.id}</div>
-                <div>Description: ${this.description} </div>
-                <img src="${this.url}"/>
+                <div class="employee-card">
+                   <img class="profile-image" src="${this.url}" alt="${this.name}"/>
+                    <div class="name">Name: ${this.name}</div>
+                    <div class="description">Description: ${this.description} </div>
+                </div>
             `;
         }
     } 
