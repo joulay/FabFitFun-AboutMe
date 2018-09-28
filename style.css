@@ -1,17 +1,4 @@
-@media all and (max-width: 1200px) and (min-width: 600px) {
-    .employee-card {
-
-    }
-    .profile-image {
-        height: 10rem;
-        width: 10rem;
-        margin-top: 3rem;
-        border-radius: 3px;
-    }
-  }
-*,
-*::after,
-*::before {
+*{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
