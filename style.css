@@ -54,6 +54,14 @@ body {
     border-radius: 6px;
 }
 
+.employee-list {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+
 .employee-card {
     text-align: center;
 }
@@ -68,14 +76,6 @@ body {
     font-size: 1.2rem;
     margin-top: 6px;
     color: grey;
-}
-
-.employee-list {
-    list-style: none;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10rem;
 }
 
 .emp-img {
