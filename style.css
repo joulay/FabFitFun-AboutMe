@@ -11,17 +11,32 @@ html {
 } 
 
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: #f7f7f7;
     box-sizing: border-box;
 }
 
+.header {
+    height: 12vh;
+}
+
+.logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.header-logo{
+    height: 4rem;
+    
+}
+
 .profile-row {
     display: flex;
-    justify-content: space-between;
-    border: 1px solid pink;
+    justify-content: space-around;
     visibility: hidden;
     max-height: 0;
+    margin: 0 20rem 4rem;
 }
 
 .row--show {
@@ -33,17 +48,34 @@ body {
 
 .row-employee {
     font-size: 1.8rem;
-    display: flex;
-    border: 1px solid yellow;
-    width: 30%;
-    margin: 24px;
+    width: 25%;
+    height: 30rem;
+    float: left;
+    background-color: white;
+    box-shadow: 0 1.5rem 4rem #E5E7E9;
+    border-radius: 6px;
 }
 
+.employee-card {
+    text-align: center;
+    
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: 6px;
+    color: grey;
+}
 
 .employee-list {
     list-style: none;
     flex-wrap: wrap;
-   
     display: flex;
     justify-content: space-around;
 }
@@ -61,6 +93,9 @@ body {
 }
 
 .profile-image {
-    height: 18rem;
-    width: 18rem;
+    height: 20rem;
+    width: 20rem;
+    margin-top: 3rem;
+    border-radius: 3px;
 }
+

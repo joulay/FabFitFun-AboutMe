@@ -10,9 +10,9 @@ $(document).ready(function() {
         this.generateHtml = function() {
             return `
                 <div class="employee-card">
-                   <img class="profile-image" src="${this.url}" alt="${this.name}"/>
-                    <div class="name">Name: ${this.name}</div>
-                    <div class="description">Description: ${this.description} </div>
+                    <img class="profile-image" src="${this.url}" alt="${this.name}"/>
+                    <div class="name">${this.name}</div>
+                    <div class="description">${this.description} </div>
                 </div>
             `;
         }
@@ -32,8 +32,7 @@ $(document).ready(function() {
         this.addItem = function (id) {
             this.item3 = this.item2; 
             this.item2 = this.item1; 
-
-            this.item1 = new ProfileItem(this.employeeJson, id); // { id: 'emp1', name: 'julie', description 'sassy af' };
+            this.item1 = new ProfileItem(this.employeeJson, id); // { id: 'emp1', name: 'phyllis', description 'salesman' };
 
         }
 
@@ -71,6 +70,7 @@ $(document).ready(function() {
         }
         profileEngine.addItem(e.target.id);
         profileEngine.render();
+
     });
 });
 
