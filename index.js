@@ -56,10 +56,22 @@ $(document).ready(function() {
 
 
     $('.employee-list').on('click', function(e) {
+        console.log(e.target.id)
         if(!haveEmployeeSelected) {
             haveEmployeeSelected = true;
-            $('.row').toggleClass('row--show')
-        }  
+            $('.row').toggleClass('row--show');
+
+        }
+       
+        $('#pos3').html($('#pos2').html());
+        $('#pos2').html($('#pos1').html()); 
+        $('#pos1').html("e.target.name");
+
     })
 
+    let data = Object.keys(userJson)
+     //square bracket notation to get data
+
 });
+
+
