@@ -68,8 +68,8 @@ $(document).ready(function() {
         }
         profileEngine.addItem(e.target.id);
         profileEngine.render();
-
     });
+    
 });
 
 
