@@ -44,6 +44,7 @@ $(document).ready(function() {
 
             if (this.item2) {
                 $('#pos2').html(this.item2.generateHtml());
+        
             }
             if (this.item3) {
                 $('#pos3').html(this.item3.generateHtml());
